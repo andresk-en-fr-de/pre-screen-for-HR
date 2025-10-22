@@ -1,0 +1,111 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50; /* green */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.2);
+  background-color: #388e3c; /* darker green on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+h2 {
+  font-family: "Chewy", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #800020;
+}
+.answer-option {
+  font-family: "Chewy", sans-serif;
+  font-size: 1.83rem;
+  background-color: #fff8e1;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 2.5rem auto;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+}
+
+.answer-option:hover {
+  transform: scale(1.03);
+}
+
+.answer-option.correct {
+  background-color: #c0f0aa;
+}
+
+.answer-option.wrong {
+  background-color: #f8bcbc;
+}
+ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+.answer-option {
+  position: relative;
+  padding-left: 2rem; /* make room for custom bullet */
+}
+
+.answer-option::before {
+  content: "💡"; /* or 💡, ✔️, 🎯 */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+.final-screen {
+  background: #fffef5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.final-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #004d40;
+  margin: 1rem 0;
+}
+
+.thank-you {
+  font-style: italic;
+  font-size: 1.14rem;
+  color: #070b41;
+}
+.score-line {
+  font-size: 1.1rem;
+  color: #000000;
+  margin: 1rem 0;
+  background-color: #e8f5e9;
+  padding: 0.5rem 0.41rem;
+  border-radius: 8px;
+  display: inline-block;
+}
